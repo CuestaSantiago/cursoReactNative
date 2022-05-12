@@ -16,6 +16,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    flexDirection:'column'
+    //flexDirection:'column', siempre afecta al eje principal vertical
+    //flexDirection:'row', al eje principal horizontal
+    flexDirection:'column', 
+    justifyContent:'flex-end', // siempre afecta al eje principal 
+    //alignItems:'stretch'// es el valor original y solo existe en alingItems
+    alignItems:'flex-end'// siempre afecta eje secundario
   },
 });
